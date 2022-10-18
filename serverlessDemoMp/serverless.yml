@@ -14,7 +14,7 @@ plugins:
 
 functions:
   getHelloWorld:
-    handler: lambdas/getHelloWorld.handler
+    handler: lambdas/getHelloWorld.lambdaHandler
     events: 
         - http: 
             path: get-hello-world

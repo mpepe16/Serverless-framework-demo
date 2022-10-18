@@ -22,6 +22,5 @@
     "strictNullChecks": true,
     "rootDir": "./"
   },
-  "include": ["./lambdas"],
-  "exclude": ["./dist, node_modules, **/*.test.ts"]
+  "exclude": ["./build, ./node_modules, **/*.test.ts"]
 }
