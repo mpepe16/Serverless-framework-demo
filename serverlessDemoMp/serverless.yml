@@ -8,6 +8,10 @@ provider:
   runtime: nodejs16.x
   profile: serverlessUser
   region: eu-central-1
+
+plugins:
+  - serverless-plugin-typescript
+
 functions:
   getHelloWorld:
     handler: lambdas/getHelloWorld.handler
