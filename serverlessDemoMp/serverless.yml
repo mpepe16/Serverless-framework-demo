@@ -1,0 +1,24 @@
+
+
+service: serverlessdemomp
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  profile: serverlessUser
+  region: eu-central-1
+functions:
+  getHelloWorld:
+    handler: lambdas/getHelloWorld.handler
+    events: 
+        - http: 
+            path: get-hello-world
+            method: GET
+            cors: true  
+resources:
+  Resources:
+    DemoBucketUpload:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: myserverless-project-upload-mp
