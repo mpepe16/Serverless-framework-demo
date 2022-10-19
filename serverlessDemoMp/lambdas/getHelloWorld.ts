@@ -21,7 +21,7 @@ export const lambdaHandler = async (_event: APIGatewayProxyEvent): Promise<APIGa
                 "Access-Control-Allow-Methods": "POST,GET"
             },
             body: JSON.stringify({
-                message: 'Not sure when was the last to be so happy so see the sentence: hellow world',
+                message: 'Not sure when was the last to be so happy so see the sentence: hello world',
             }),
         };
     } catch (err: unknown) {
@@ -36,3 +36,4 @@ export const lambdaHandler = async (_event: APIGatewayProxyEvent): Promise<APIGa
 
     return response;
 };
+
